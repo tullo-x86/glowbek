@@ -32,6 +32,10 @@
 *.srec
 [Mm]akefile
 
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
 # gEDA tempfiles
 \#*
 *.sch~
