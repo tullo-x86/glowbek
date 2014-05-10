@@ -8,7 +8,7 @@ refdes=Z1
 T 49000 49300 5 10 1 1 270 0 1
 value=5v1
 T 48500 49800 5 10 0 0 0 0 1
-footprint=SOD123
+footprint=SOD123.fp
 }
 C 45600 50000 1 0 0 vcc-1.sym
 C 46500 48200 1 0 0 gnd-1.sym
@@ -21,7 +21,7 @@ refdes=R1
 T 49700 49300 5 10 1 1 270 0 1
 value=22k
 T 49500 49800 5 10 0 0 0 0 1
-footprint=0805L
+footprint=0805
 }
 C 50400 50000 1 90 0 connector2-2.sym
 {
@@ -30,7 +30,7 @@ refdes=J2
 T 49150 50300 5 10 0 0 90 0 1
 device=CONNECTOR_2
 T 48950 50300 5 10 0 0 90 0 1
-footprint=SIP2N
+footprint=SIP2.fp
 T 49800 50800 5 10 1 1 0 0 1
 value=Sensor
 }
@@ -41,7 +41,7 @@ refdes=J1
 T 46150 50300 5 10 0 0 90 0 1
 device=CONNECTOR_2
 T 45950 50300 5 10 0 0 90 0 1
-footprint=SIP2N
+footprint=SIP2.fp
 T 46800 50800 5 10 1 1 0 0 1
 value=Power
 }
@@ -63,7 +63,7 @@ symversion=0.1
 T 46200 48800 5 10 1 1 0 0 1
 value=4u7
 T 46800 48700 5 10 0 0 0 0 1
-footprint=0805L
+footprint=0805
 }
 N 47000 50000 47000 48700 4
 N 46600 49600 46600 50000 4
@@ -99,7 +99,7 @@ C 45400 45300 1 0 1 connector6-2.sym
 T 45100 48150 5 10 0 0 0 6 1
 device=CONNECTOR_6
 T 45100 48350 5 10 0 0 0 6 1
-footprint=JUMPER6_OVAL_SS
+footprint=JUMPER6
 T 44700 48200 5 10 1 1 0 0 1
 refdes=J4
 T 44600 48100 5 10 1 1 90 6 1
@@ -180,7 +180,7 @@ refdes=R2
 T 48400 46600 5 10 1 1 270 0 1
 value=10k
 T 48600 46800 5 10 0 0 0 0 1
-footprint=0805L
+footprint=0805
 }
 N 48900 47000 48700 47000 4
 N 48700 47000 48700 46800 4
@@ -198,7 +198,7 @@ refdes=J3
 T 52400 48850 5 10 0 0 180 0 1
 device=CONNECTOR_3
 T 52400 48650 5 10 0 0 180 0 1
-footprint=SIP3N
+footprint=SIP3.fp
 T 51900 50000 5 10 1 1 90 0 1
 value=LEDs
 }
@@ -224,5 +224,5 @@ symversion=0.1
 T 53300 46000 5 10 1 1 0 0 1
 value=100n
 T 53500 45900 5 10 0 0 0 0 1
-footprint=0805L
+footprint=0805
 }
