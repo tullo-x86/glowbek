@@ -1,6 +1,7 @@
 // Glowbek: The doumbek that glows!
 // Author: Daniel Tullemans / "LuminousElement"
 // Created 2014
+//Timeka waz here
 
 #include "light_ws2812.h"
 #include <string.h> /* memset */
