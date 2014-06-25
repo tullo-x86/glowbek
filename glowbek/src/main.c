@@ -4,6 +4,7 @@
 
 #include "light_ws2812.h"
 #include <string.h> /* memset */
+#include <stdlib.h> /* rand */
 #include <util/delay.h>
 #include <avr/io.h>
 #include "hsv.h"
@@ -82,7 +83,7 @@ void debugHistoryBuffer(uint8_t historicalPeak, uint8_t currentPeak, uint8_t sam
         isPulseDetected(historicalPeak, currentPeak) ? 255 : 0;
     
 
-    for (int i = 0; i < HISTORY_COUNT; ++i)
+    for (int i = 0; i < (NUM_LEDS - 5); ++i)
     {
         frameBuffer[i + 3].b = sampleHistory[i];
     }

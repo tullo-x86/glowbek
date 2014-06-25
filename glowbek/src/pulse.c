@@ -1,6 +1,7 @@
 // pulse.c
 #include "pulse.h"
 #include <string.h> /* memset */
+#include "rgb.h"
 
 struct cRGB *fBuf;
 uint8_t fbLength;
