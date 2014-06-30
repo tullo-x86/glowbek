@@ -89,8 +89,20 @@ void debugHistoryBuffer(uint8_t historicalPeak, uint8_t currentPeak, uint8_t sam
     }
 }
 
+
+void setIndicator(int isOn)
+{
+	if (isOn) PORTB |= _BV(5);
+	else PORTB &= ~_BV(5);
+}
+
+unsigned char toggle = 0;
+
 int main()
 {
+	DDRB |= _BV(5);
+	PORTB &= ~_BV(5);
+
     /////////////////////////////
     // Set up the analogue input
     setupAdcOnPin(0);
@@ -116,6 +128,10 @@ int main()
 
     while(1)
     {
+    	++toggle;
+    	toggle = toggle % 50;
+        setIndicator(toggle == 0);
+
         // Hist = = = = =
         // Wind       - -
         // Copy   - -
